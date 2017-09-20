@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" >
+    <title>MRcook</title>
+    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css">
+    <script type="text/javascript" src="jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="jq.fullPage.js"></script>
+    <style type="text/css">
+        #fp-nav ul li a span {
+            background: white;
+        }
+        #fp-nav ul li a.active span, 
+        .fp-slidesNav ul li a.active span, 
+        #fp-nav ul li:hover a.active span, 
+        .fp-slidesNav ul li:hover a.active span {
+            width: 16px;
+            height: 16px;
+            margin: -8px 0 0 -8px;
+            box-sizing: border-box;
+            border: 3px solid rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#fullpage').fullpage({
+                navigation: true,
+                anchors: ['first','second','third'],
+                menu: '#menu'
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <!-- start of left div -->
+
+
+    <div id="leftdiv">
+        <a href="home.html"><img src="images/logo.png" width="40px" height="60px" alt="logo" title="logo" id="logo"></a>
+        <div id="asidemenu">
+            <ul id="menu">
+                <li><a href="#first"><div><i class="fa fa-home activelogo" id="home-icon" ></i><h3 id="mtavari">მთავარი</h3></div></a></li>
+                <li><a href="#second"><div><i class="fa fa-info-circle" id="info-icon"></i><h3 id="shesaxeb">ჩვენს შესახებ</h3></div></a></li>
+                <li><a href="#third"><div><i class="fa fa-envelope" id="mail-icon"></i><h3 id="kontaqti">კონტაქტი</h3></div></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- end of left div -->
+
+    <!-- start of main div -->
+
+    <div id="maindiv">
+        <div id="bg">
+
+            <!-- top menu div -->
+
+            <div id="menu1">
+                <div>
+                    <ul>
+                        <li id="first"><a href="#second">ჩვენს შესახებ</a></li
+                        ><li><a href="#third">კონტაქტი</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- end of top menu div -->
+            <!-- big image div -->
+
+            <div id="imgdiv">
+                <a href="home.html"><img src="images/logo.png" width="160px" height="230px" alt="MRcook" title="MRcook" id="mrcook"></a>
+            </div>
+
+            <!-- end of big image div -->
+            <!-- start of main content -->
+
+            <div id="fullpage">
+                    
+                <div class="section" id="main">
+                    <h1><strong>MR</strong><span style="font-weight: 200">COOK</span></h1>
+                    <p>საიტზე მიმდინარეობს ტექნიკური სამუშაოები</p>
+                </div>
+
+                <div class="section" id="aboutUs">
+                    <div>
+                        <h1>ჩვენს შესახებ <i class="fa fa-info-circle" id="inform" style="display: inline-block"></i></h1>
+                    </div>
+                    <p>კომპანია „MR.cook”-ი დაარსდა 2009 წელს და წარმოადგენს კერძო კაფეტერიების ქსელს ქართულ ბაზარზე.</p>
+                    <p>2009 წლიდან - დღემდე, კომპანიის საქმიანობის ფარგლებში გაიხსნა და წარმატებით ამუშავდა 8 კაფეტერია. კომპანიის კონცეფცია გათვლილია სხვადასხვა საფასო და ასაკობრივ სეგმენტზე. კომპანია “MR.cook”-ი კაფეტერიების გარდა ორიენტირებულია სადღესასწაულო და საქმიანი შეხვედრების კვებით მომსახურებაზე, კერძოდ კატერინგით „ფურშეტების“ ორგანიზება-უზრუნველყოფით.</p>
+                    <p>კომპანია “MR.cook”-ის გუნდი ორიენტირებულია მომხმარებლის მოთხოვნებზე და მისი მიზანია, მომხმარებლისთვის მაღალი ხარისხის სერვისის, ხარისხიანი, ჯანსაღი პროდუქტის და სასიამოვნო ატმოსფეროს შექმნა.</p>
+                </div>
+
+                <div class="section" id="contact">
+                    <div id="leftdata">
+                        <h1>კონტაქტი <i class="fa fa-map-marker" id="point"></i></h1>
+                    </div>
+                    <div id="rightdata">
+                        <ul>
+                            <li style="margin-left: -20px"><a href="#second"><i class="fa fa-info-circle" id="datainfo"></i></a></li
+                            ><li style="margin-left: -10px"><a href="#third"><i class="fa fa-envelope" id="datamail"></i></a></li>
+                        </ul>
+                    </div>
+                    <div id="additional">
+                        <h2>EMAIL</h2>
+                        <h4>info@mrcook.ge</h4>
+                        <h2>მისამართი</h2>
+                        <h4>შევჩენკოს ქ.#5</h4>
+                        <h2>ტელეფონი</h2>
+                        <h4>+(995 32) 292 25 50</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- end of main content -->
+            <div id="footer">
+                <div id="scroller">
+                    <a href="#" id="down">
+                        <div id="scroll" style="font-size: 14px">დასქროლე</div>
+                        <div id="lft"></div>
+                        <div id="mouse"><i class="ion ion-mouse"></i></div>
+                        <div id="rght"></div>
+                        <div id="down1" style="margin-left: 10px; font-size: 14px">ქვემოთ</div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 
+           javascript file
+    -->
+
+    <script type="text/javascript" src="jscript.js"></script>
+</body>
+</html>
